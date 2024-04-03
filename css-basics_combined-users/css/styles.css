@@ -109,3 +109,10 @@ aside.user.bio {
 aside.user.location {
   font-size: 10px;
 }
+ul.user.bio {
+  display: none;
+}
+ul.location {
+  color: darkslategray;
+  text-align: left;
+}
