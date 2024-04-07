@@ -93,7 +93,7 @@ a:focus-visible {
 
 mark {
   background-color: var(--color-primary);
-  color: #ffffff;
+  color: var(--color-white);
   border-radius: var(--border-radius-small);
   letter-spacing: 0.025em;
 }
