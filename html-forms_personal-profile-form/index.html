@@ -10,6 +10,36 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section></section>
+    <section> 
+      <form action="">
+        <p> please enter your personal informations</p>
+        <fieldset>
+          <legend>Personal information</legend>
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name"></input>
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="last-name"></input>
+          <label for="birthday">Your Birthday</label>
+          <input type="date" name="birthday" id="birthday"></input>
+        </fieldset>
+      
+        <fieldset>
+          <p>Can you tell us a bit more?</p>
+          <legend>Further Information</legend>
+          <label for="favorite-color">Favorite color:</label>
+          <input type="color" name="favorite-color" id="favorite-color" />
+          <select>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option value="">Mouse</option>
+
+          
+          </select>
+        </fieldset>
+      <button>Submit</button>
+    </form>
+      
+
+    </section>
   </body>
 </html>
