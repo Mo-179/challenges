@@ -35,11 +35,17 @@ const recipes = [
  1: `map` exercises
 */
 
-const onlyTitles = null; // ['Crepes', ...]
+const onlyTitles = recipes.map((recipe) => {
+  return recipe.title;
+}); // ['Crepes', ...]
 
-const titlesWithDuration = null; // ['Crepes (60min)', ...]
+const titlesWithDuration = recipes.map((recipe) => {
+  return recipe.title, recipe.duration;
+}); // ['Crepes (60min)', ...]
 
-const timePerServing = null; // [20, 10, 432, 12]
+const timePerServing = recipes.map((recipe) => {
+  return recipe.duration / recipe.servings;
+}); // [20, 10, 432, 12]
 
 // EXTRA:
 
@@ -55,11 +61,17 @@ const allTitlesInOneString = null; // 'Crepes, Scrambled Eggs, ...'
  2: `filter` exercises
 */
 
-const recipesThatOnlyTake60minutesOrLess = null;
+const recipesThatOnlyTake60minutesOrLess = recipes.filter(
+  (recipe) => duration <= 60
+);
 
-const allRecipesWithMoreThan2Servings = null;
+const allRecipesWithMoreThan2Servings = recipes.filter(
+  (recipe) => recipe.servings > 2
+);
 
-const allRecipesWithTitlesLongerThan12Characters = null;
+const allRecipesWithTitlesLongerThan12Characters = recipes.filter(
+  (recipe) => recipe.title.length > 12
+);
 
 export {
   onlyTitles,
