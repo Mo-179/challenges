@@ -1,10 +1,10 @@
+import { useState } from "react";
 import "./App.css";
-
 export default function App() {
-  let isActive = false;
-
+  let [isActive, setisActive] = useState(true);
+  console.log(isActive);
   function handleClick() {
-    isActive = !isActive;
+    setisActive(!isActive);
     // Check that the value changes correctly.
     console.log(isActive);
   }
